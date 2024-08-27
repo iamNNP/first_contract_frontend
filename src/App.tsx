@@ -9,7 +9,9 @@ function App() {
   const {
     contract_address,
     counter_value,
+    // @ts-ignore
     recent_sender,
+    // @ts-ignore
     owner_address,
     contract_balance,
     sendIncrement, 
