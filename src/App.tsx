@@ -62,6 +62,16 @@ function App() {
           Show your theme
         </a>
 
+        <br/>
+
+        <a onClick={() => {
+          showAlert(WebApp.platform)
+        }}>
+          Show your platform
+        </a>
+
+        <br/>
+
         {connected && (
           <a onClick={() => {
             sendIncrement()
