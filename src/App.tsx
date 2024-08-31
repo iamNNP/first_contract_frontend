@@ -22,8 +22,8 @@ function App() {
 
   const { connected } = useTonConnect();
 
-  const showAlert = () => {
-    WebApp.showAlert("Simple alert");
+  const showAlert = (alert: string) => {
+    WebApp.showAlert(alert);
   };
 
   return (
@@ -33,8 +33,6 @@ function App() {
       </div>
       <div>
         <div className='Card'>
-          <b>Your platform</b>
-          <div className='Hint'>{WebApp.platform}</div>
           <b>Our contract Address</b>
           <div className='Hint'>{contract_address}</div>
           <b>Our contract Balance</b>
@@ -48,10 +46,20 @@ function App() {
           <div>{counter_value ?? "Loading..."}</div>
         </div>
 
+        <br/>
+
         <a onClick={() => {
-          showAlert()
+          showAlert("Simple alert")
         }}>
           Show simple alert
+        </a>
+
+        <br/>
+
+        <a onClick={() => {
+          showAlert(WebApp.colorScheme)
+        }}>
+          Show your theme
         </a>
 
         {connected && (
