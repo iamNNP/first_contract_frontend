@@ -48,56 +48,56 @@ function App() {
 
         <br/>
 
-        <a onClick={() => {
+        <button onClick={() => {
           showAlert("Simple alert")
         }}>
           Show simple alert
-        </a>
+        </button>
 
         <br/>
 
-        <a onClick={() => {
+        <button onClick={() => {
           showAlert(WebApp.colorScheme)
         }}>
           Show your theme
-        </a>
+        </button>
 
         <br/>
 
-        <a onClick={() => {
+        <button onClick={() => {
           showAlert(WebApp.platform)
         }}>
           Show your platform
-        </a>
+        </button>
 
         <br/>
 
         {connected && (
-          <a onClick={() => {
+          <button onClick={() => {
             sendIncrement()
           }}>
             Increment by 5
-          </a>
+          </button>
         )}
 
         <br/>
 
         {connected && (
-          <a onClick={() => {
+          <button onClick={() => {
             sendDeposit()
           }}>
             Request deposit of 1 TON
-          </a>
+          </button>
         )}
 
         <br/>
 
         {connected && (
-          <a onClick={() => {
+          <button onClick={() => {
             sendWithdrawalRequest()
           }}>
             Send withdrawal request of 1 TON
-          </a>
+          </button>
         )}
       </div>
     </div>
