@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <TonConnectButton />
       </div>
       <div>
